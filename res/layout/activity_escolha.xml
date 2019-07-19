@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Escolha">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:text="Cursos e Disciplinas"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="	#000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textoCurso"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Curso:"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo"/>
+
+    <Spinner
+        android:id="@+id/spinnerCurso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:popupBackground="#D3D3D3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textoCurso"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textoCadeira"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Disciplina:"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoCurso"/>
+
+    <Spinner
+        android:id="@+id/spinnerCadeira"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:popupBackground="#D3D3D3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCurso"
+        app:layout_constraintLeft_toRightOf="@+id/textoCadeira">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:onClick="Teste"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Confirmar"
+        android:layout_marginTop="80dp"
+        android:textColor="#FFFAF0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCadeira"
+
+        />
+
+    <Button
+        android:id="@+id/btnAvancar"
+        android:onClick="ConsultaPref"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Lista de Preferências"
+        android:textColor="#FFFAF0"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmar"
+
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

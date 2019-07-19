@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_photo"
+            android:icon="@drawable/ic_insert_photo"
+            android:title="Adicionar Teste"
+            />
+        <item android:id="@+id/nav_Remover"
+            android:icon="@drawable/ic_delete_teste"
+            android:title="Remover Teste"
+            />
+
+        <item android:id="@+id/nav_foto_trabalho"
+            android:icon="@drawable/ic_insert_photo"
+            android:title="Adicionar Trabalho"
+            />
+
+        <item android:id="@+id/nav_remove_trabalho"
+            android:icon="@drawable/ic_delete_teste"
+            android:title="Remover Trabalho"
+            />
+
+        <item android:id="@+id/nav_Preferencia"
+            android:icon="@drawable/ic_list_preferencias"
+            android:title="Lista de Preferências"
+            />
+
+        <item android:id="@+id/nav_Suporte"
+            android:icon="@drawable/ic_help"
+            android:title="Suporte"
+            />
+
+        <item android:id="@+id/nav_Logout"
+            android:icon="@drawable/ic_logout"
+            android:title="LogOut"
+            />
+
+    </group>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendEmail">
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envie um email se tiver qualquer problema"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:textColor="	#000000"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/EmailDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="davidcatrao95@gmail.com"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/Assunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assunto"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailDestino"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/TextoEmail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Descreva o seu problema..."
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Assunto"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+
+        android:id="@+id/sign_up_button"
+        style="?android:textAppearanceSmall"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="EnviarEmail"
+        android:layout_marginTop="30dp"
+        android:text="Enviar Email"
+       android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:textSize="14dp"
+        android:textColor="#FFFAF0"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoEmail"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
